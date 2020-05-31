@@ -1,6 +1,11 @@
 package com.himansh.doublyLinkedList;
 
+//comment coz i dont knw shit about data structures1
+
+
 //Jai shree ram
+
+//hiiiii
 public class DoublyLinkedList {
 	private Node head;
 	private int length=0;
