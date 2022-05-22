@@ -6,6 +6,8 @@
 
 # Target Files
 target/
+.settings/
+bin/
 
 # Package Files #
 *.jar
