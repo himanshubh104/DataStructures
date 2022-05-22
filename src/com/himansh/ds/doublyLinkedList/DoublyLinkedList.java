@@ -1,4 +1,4 @@
-package com.himansh.doublyLinkedList;
+package com.himansh.ds.doublyLinkedList;
 
 public class DoublyLinkedList {
 	private Node head;

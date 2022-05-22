@@ -1,8 +1,8 @@
-package com.himansh.test;
+package com.himansh.ds;
 
-import com.himansh.doublyLinkedList.DoublyLinkedList;
-import com.himansh.linkedList.LinkedList;
-import com.himansh.set.LinkedSet;
+import com.himansh.ds.doublyLinkedList.DoublyLinkedList;
+import com.himansh.ds.linkedList.LinkedList;
+import com.himansh.ds.set.LinkedSet;
 
 public class ClientTest {
 

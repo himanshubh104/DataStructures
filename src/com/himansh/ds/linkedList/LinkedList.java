@@ -1,9 +1,19 @@
-package com.himansh.set;
+package com.himansh.ds.linkedList;
 
-public class LinkedSet {
+public class LinkedList {
 	private Node head;
 	private int length=0;
 	
+	public LinkedList() {
+		super();
+	}
+
+	public LinkedList(Node head, int length) {
+		super();
+		this.head = head;
+		this.length = length;
+	}
+
 	private class Node {
 		String data;
 		Node next;
@@ -24,16 +34,10 @@ public class LinkedSet {
 		}
 		else {
 			Node pointer=head;
-			Node lastNode = head;
-			while(pointer!=null) {
-				if(data.hashCode()==pointer.getData().hashCode()) {
-					return;
-				}
-				lastNode=pointer;
+			while(pointer.next!=null) {
 				pointer=pointer.next;
-				
 			}
-			lastNode.next=newNode;
+			pointer.next=newNode;
 		}
 		length++;
 	}
@@ -132,5 +136,19 @@ public class LinkedSet {
 			return -1;
 		length--;
 		return index;
+	}
+	
+	public LinkedList reverse() {
+		Node pointer=head;
+		Node prev=null;
+		Node nxt=null;
+		while(pointer!=null) {
+			nxt=pointer;
+			pointer=pointer.next;
+			nxt.next=prev;
+			prev=nxt;		
+		}
+		head=nxt;
+		return this;
 	}
 }
