@@ -1,2 +1,2 @@
 # DataStructures
- This is the demo repository
+ This is Repository consists of custom built Datastructures for practice
